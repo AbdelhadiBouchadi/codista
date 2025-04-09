@@ -1,0 +1,86 @@
+{
+  "Intro": {
+    "portfolio": "portfolio"
+  },
+  "Hero": {
+    "welcome": "welcome",
+    "tagline": "✦ You're in the right place to take your digital presence to the next level ✦",
+    "intro": "Welcome to CODISTA — where creativity meets cutting-edge code. We don't just build websites and apps; we craft digital experiences that captivate and convert. Whether you're launching a bold new brand or refreshing an existing one, our team transforms your vision into sleek, high-performing designs that leave a lasting impact. Need a stunning portfolio, a seamless eCommerce store, or a custom mobile app that works like magic? You've just found your digital dream team. Let’s build brilliance together.",
+    "visionTitle": "Driven by Vision",
+    "visionText": "At Codista, we partner with passionate creators, startups, and dreamers to bring digital ideas to life. Be part of the journey.",
+    "scroll": "✺ scroll to explore"
+  },
+  "NotFound": {
+    "clickHere": "✺ Click here"
+  },
+  "Nav": {
+    "About": {
+      "title": "About",
+      "description": "About Us"
+    },
+    "Services": {
+      "title": "Services",
+      "description": "Services Offered"
+    },
+    "Projects": {
+      "title": "Projects",
+      "description": "Projects We've Worked On"
+    },
+    "Testimonials": {
+      "title": "Testimonials",
+      "description": "What Our Clients Say"
+    },
+    "Contacts": {
+      "title": "Contacts",
+      "description": "Get in Touch"
+    }
+  },
+  "AboutSection": {
+    "title": "About Us",
+    "mission": {
+      "title": "Mission",
+      "description": "To deliver innovative, user-friendly online solutions that empower individuals and businesses, including those without technical expertise, to thrive in the digital landscape."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "To create a digital ecosystem where every individual and business, regardless of their background, can seamlessly access and benefit from online services to achieve growth and success."
+    },
+    "goal": {
+      "title": "Goal",
+      "description": "To simplify digital adoption for everyone, enabling businesses of all sizes to enhance their online presence, streamline operations, and achieve sustainable growth."
+    },
+    "slogan": "The best way to predict the future is to create it"
+  },
+  "ServicesSection": {
+    "heading": "✦ Services",
+    "CarouselCardData": {
+      "web": {
+        "heading": "Web/Mobile App Development",
+        "description": "Creating sleek, modern web and mobile applications that bring your vision to life."
+      },
+      "ecom": {
+        "heading": "E-commerce Solutions",
+        "description": "Building robust e-commerce platforms that drive sales and enhance customer experience."
+      },
+      "hosting": {
+        "heading": "Hosting & Maintenance",
+        "description": "Providing reliable hosting and ongoing maintenance to keep your digital presence running smoothly."
+      },
+      "cms": {
+        "heading": "CMS Development",
+        "description": "Developing custom content management systems that empower you to manage your content effortlessly."
+      },
+      "seo": {
+        "heading": "SEO & Digital Marketing",
+        "description": "Implementing effective SEO strategies and digital marketing campaigns to boost your online visibility."
+      },
+      "more": {
+        "heading": "More Services",
+        "description": "For more inquiries, feel free to contact us."
+      }
+    }
+  },
+  "SkillsSection": {
+    "heading": "Core Technologies"
+  }
+}

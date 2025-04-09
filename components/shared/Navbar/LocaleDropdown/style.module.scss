@@ -1,0 +1,27 @@
+.dropdown {
+  @apply relative inline-block;
+
+  .trigger {
+    @apply flex items-center gap-2 px-3 py-2 rounded-full bg-white/10 backdrop-blur-sm
+             border border-white/20 text-sm font-medium transition-colors duration-200
+             hover:bg-white/20;
+
+    svg {
+      @apply text-current;
+    }
+  }
+
+  .content {
+    @apply absolute right-0 mt-2 w-40 rounded-lg bg-white/10 shadow-lg
+             border border-gray-100 overflow-hidden z-50 text-gray-100;
+  }
+
+  .option {
+    @apply w-full px-4 py-2 text-left transition-colors duration-200
+             hover:bg-gray-50/10 focus:outline-none;
+
+    &.selected {
+      @apply bg-gray-50/30 font-medium;
+    }
+  }
+}

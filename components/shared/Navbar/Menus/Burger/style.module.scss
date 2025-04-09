@@ -1,0 +1,55 @@
+.button {
+  background-color: #0c0c0c;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: fixed;
+  right: -10px;
+  top: -3.2px;
+  cursor: pointer;
+
+  p {
+    display: none;
+    color: white;
+    margin: 0px;
+    text-transform: uppercase;
+    transition: color 0.5s;
+  }
+
+  svg {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    line {
+      transition: stroke 0.5s;
+    }
+  }
+
+  &:hover {
+    p {
+      color: #0c0c0c;
+    }
+    svg {
+      line {
+        stroke: #0c0c0c;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .button {
+    height: 120px;
+    top: -2.8px;
+    p {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .button {
+    top: -4.4px;
+  }
+}

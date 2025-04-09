@@ -1,0 +1,86 @@
+{
+  "Intro": {
+    "portfolio": "portfolio"
+  },
+  "Hero": {
+    "welcome": "bienvenue",
+    "tagline": "✦ Vous êtes au bon endroit pour faire passer votre présence numérique au niveau supérieur ✦",
+    "intro": "Bienvenue chez CODISTA — là où la créativité rencontre le code de pointe. Nous ne construisons pas seulement des sites web et des applications ; nous créons des expériences numériques qui captivent et convertissent. Que vous lanciez une nouvelle marque audacieuse ou que vous en réimaginiez une existante, notre équipe transforme votre vision en designs élégants et performants. Besoin d’un portfolio impressionnant, d’une boutique e-commerce fluide ou d’une application mobile sur mesure ? Vous venez de trouver votre équipe de rêve digitale. Construisons l'excellence ensemble.",
+    "visionTitle": "Portés par la vision",
+    "visionText": "Chez Codista, nous collaborons avec des créateurs passionnés, des startups et des rêveurs pour donner vie aux idées digitales. Faites partie de l'aventure.",
+    "scroll": "✺ faites défiler pour explorer"
+  },
+  "NotFound": {
+    "clickHere": "✺ Cliquez-ici"
+  },
+  "Nav": {
+    "About": {
+      "title": "A Propos",
+      "description": "Qui sommes-nous?"
+    },
+    "Services": {
+      "title": "Services",
+      "description": "Services Proposés"
+    },
+    "Projects": {
+      "title": "Projets",
+      "description": "Projets réalisés"
+    },
+    "Testimonials": {
+      "title": "Témoignages",
+      "description": "Ce que disent nos clients"
+    },
+    "Contacts": {
+      "title": "Contacts",
+      "description": "Entrer en contact"
+    }
+  },
+  "AboutSection": {
+    "title": "A Propos",
+    "mission": {
+      "title": "Mission",
+      "description": "Fournir des solutions en ligne innovantes et conviviales qui permettent aux particuliers et aux entreprises, y compris ceux qui ne disposent pas d’expertise technique, de prospérer dans le paysage numérique."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "Créer un écosystème numérique où chaque individu et chaque entreprise, quel que soit son parcours, peut accéder en toute transparence et bénéficier de services en ligne pour atteindre la croissance et le succès."
+    },
+    "goal": {
+      "title": "But",
+      "description": "Simplifier l’adoption du numérique pour tous, en permettant aux entreprises de toutes tailles d’améliorer leur présence en ligne, de rationaliser leurs opérations et de parvenir à une croissance durable."
+    },
+    "slogan": "La meilleure façon de prédire l'avenir est de le créer"
+  },
+  "ServicesSection": {
+    "heading": "✦ Services",
+    "CarouselCardData": {
+      "web": {
+        "heading": "Développement des applications Web/Mobile",
+        "description": "Création d'applications Web et mobiles élégantes et modernes qui donnent vie à votre vision."
+      },
+      "ecom": {
+        "heading": "Solutions E-commerce",
+        "description": "Créer des plateformes E-commerce robustes qui stimulent les ventes et améliorent l'expérience client."
+      },
+      "hosting": {
+        "heading": "Hébergement & maintenance",
+        "description": "Fournir un hébergement fiable et une maintenance continue pour assurer le bon fonctionnement de votre présence numérique."
+      },
+      "cms": {
+        "heading": "Développement CMS",
+        "description": "Développer des systèmes de gestion de contenu personnalisés qui vous permettent de gérer votre contenu sans effort."
+      },
+      "seo": {
+        "heading": "SEO & Digital Marketing",
+        "description": "Mettre en œuvre des stratégies de référencement efficaces et des campagnes de marketing numérique pour booster votre visibilité en ligne."
+      },
+      "more": {
+        "heading": "Plus de services",
+        "description": "Pour plus d'informations"
+      }
+    }
+  },
+  "SkillsSection": {
+    "heading": "Technologies principales"
+  }
+}
