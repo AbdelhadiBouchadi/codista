@@ -82,5 +82,36 @@
   },
   "SkillsSection": {
     "heading": "Technologies principales"
+  },
+  "ProjectsSection": {
+    "heading": "Projets en vedette",
+    "hms": {
+      "title": "Système de gestion hospitalière",
+      "description": "Un système de gestion hospitalière complet pour gérer les données des patients, des médecins et des rendez-vous. Next.js pour le front-end et le back-end, MongoDB avec Prisma ORM et next-auth 5."
+    },
+    "ecom": {
+      "title": "FlowShop - Plateforme e-commerce complète",
+      "description": "Une plateforme E-commerce complète utilisant Next js 15, ReactQuery, Tailwindcss, Typescript et l'API Wix"
+    },
+    "phone": {
+      "title": "CaseCobra - Coques iPhone personnalisées",
+      "description": "Un créateur de coques iPhone personnalisées Boutique E-commerce avec quelques fonctionnalités intéressantes"
+    },
+    "pms": {
+      "title": "CarePulse - Un système de gestion des soins de santé",
+      "description": "Un système de gestion des patients convivial pour l'utilisateur et l'administrateur qui comprend les dossiers médicaux des patients et bien d'autres fonctionnalités. "
+    },
+    "ai": {
+      "title": "Application SaaS pour images IA - Canva",
+      "description": "Une VRAIE application Software-as-a-Service avec des fonctionnalités d'IA et un système de paiement et de crédit utilisant la dernière pile technologique."
+    },
+    "3d_portfolio": {
+      "title": "Site Web de portfolio animé en 3D",
+      "description": "Un prototype de site Web de portfolio animé, combinant des animations Framer Motion et des effets 3D Three.js."
+    },
+    "imd": {
+      "title": "Dashboard de gestion des stocks",
+      "descriptio": "Dashboard de gestion des stocks complet, utilisant next.js pour le front-end et node.js pour le back-end, ainsi que Prisma ORM. Déployé via AWS EC2, S3 et RDS."
+    }
   }
 }

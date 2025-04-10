@@ -3,7 +3,6 @@ import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
 import { MouseEvent, useState } from 'react';
 import Logo from './Logo';
 import Pricing from './Pricing';
-import Menus from './Menus/Menu';
 import LocaleDropdown from './LocaleDropdown/LocaleDropdown';
 
 export default function Navbar() {

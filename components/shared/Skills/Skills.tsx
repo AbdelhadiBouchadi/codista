@@ -127,7 +127,7 @@ export function Skills() {
         <h1
           ref={skillsTextRef}
           className={cn(
-            'sm:text-6xl tablet:text-8xl uppercase perspective-1000',
+            'sm:text-2xl mobile_l:text-3xl tablet:text-6xl laptop:text-7xl laptop_l:text-8xl uppercase perspective-1000',
             isArabic ? 'tajawal-font text-right' : 'milker-font  text-left '
           )}
         >

@@ -82,5 +82,36 @@
   },
   "SkillsSection": {
     "heading": "Core Technologies"
+  },
+  "ProjectsSection": {
+    "heading": "Featured Projects",
+    "hms": {
+      "title": "Hospital Management System",
+      "description": "A fullstack hospital management system, to manage patients data , doctors and appointments. Nexj.js for both front-end and back-end , mongoDB with Prisma ORM and next-auth 5. "
+    },
+    "ecom": {
+      "title": "FlowShop - Complete E-com Platform",
+      "description": "A complete e commerce platform using Next js 15, ReactQuery, Tailwindcss, Typescript, and wix API"
+    },
+    "phone": {
+      "title": "CaseCobra - Custom iPhone Cases",
+      "description": "A custom iPhone cases builder E-commerce shop with some fancy features"
+    },
+    "pms": {
+      "title": "CarePulse - A Healthcare Management System",
+      "description": "A user and admin friendly patient management system that includes patients medical records and much more features. "
+    },
+    "ai": {
+      "title": "AI Image SaaS - Canva Application",
+      "description": "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack."
+    },
+    "3d_portfolio": {
+      "title": "Animated 3D Portfolio Website",
+      "description": "An animated portfolio website prototype, combining Framer Motion animations and Three.js 3D effects.."
+    },
+    "imd": {
+      "title": "Inventory Management Dashboard",
+      "descriptio": "A fullstack inventory management dashboard, using next.js for the front-end and node.js for backend along with prisma ORM. Deployed using AWS EC2, S3 and RDS.  "
+    }
   }
 }

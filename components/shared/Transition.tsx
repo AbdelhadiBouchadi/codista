@@ -103,7 +103,7 @@ function IntroLoader() {
               className="text-alt-black z-[1]"
             >
               <h1 id="animated-text" className="sm:text-6xl tablet:text-8xl">
-                CODISTAR
+                CODISTA
                 <span className="text-4xl align-super">™</span>
               </h1>
               <div className="mt-4 text-3xl text-center tracking-widest portfolio-text">

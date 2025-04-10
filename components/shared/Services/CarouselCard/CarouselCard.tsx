@@ -1,8 +1,8 @@
-import { CardCarouselData, cardCarouselData } from '@/lib/constants';
+import { cardCarouselData } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import gsap from 'gsap';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useLenis } from 'lenis/react';
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';

@@ -195,3 +195,147 @@ export const skills: Skills[] = [
   { skill: 'PNPM', level: 80, svgElement: PNPMSVG },
   { skill: 'Playwright', level: 70, svgElement: PlaywrightSVG },
 ];
+
+export interface Project {
+  key: string;
+  title: string;
+  des: string;
+  img: string;
+  iconLists?: string[];
+  link: string;
+  color: string;
+}
+
+export const projects: Project[] = [
+  {
+    key: 'hms',
+    color: '#FFD1DC',
+    title: 'Hospital Management System',
+    des: 'A fullstack hospital management system, to manage patients data , doctors and appointments. Nexj.js for both front-end and back-end , mongoDB with Prisma ORM and next-auth 5. ',
+    img: '/eyecare.png',
+    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/next.svg', '/dock.svg'],
+    link: 'https://ophtachusm-submain.vercel.app/',
+  },
+  {
+    key: 'ecom',
+    color: '#C1FFC1',
+    title: 'FlowShop - Complete E-com Platform',
+    des: 'A complete e commerce platform using Next js 15, ReactQuery, Tailwindcss, Typescript, and wix API',
+    img: '/flowshop.png',
+    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/next.svg', '/dock.svg'],
+    link: 'https://flowshop-nine.vercel.app/',
+  },
+
+  {
+    key: 'phone',
+    color: '#B0E2FF',
+    title: 'CaseCobra - Custom iPhone Cases',
+    des: 'A custom iPhone cases builder E-commerce shop with some fancy features',
+    img: '/casecobra.png',
+    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/next.svg', '/dock.svg'],
+    link: 'https://casecobra-phonecase.vercel.app/',
+  },
+  {
+    key: 'pms',
+    color: '#E6E0F8',
+    title: 'CarePulse - A Healthcare Management System',
+    des: 'A user and admin friendly patient management system that includes patients medical records and much more features. ',
+    img: '/carepulse.png',
+    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/next.svg', '/dock.svg'],
+    link: 'https://carepulse-two-lime.vercel.app/',
+  },
+  {
+    key: 'ai',
+    color: '#FFFFC0',
+    title: 'AI Image SaaS - Canva Application',
+    des: 'A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.',
+    img: '/p3.svg',
+    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/next.svg', '/dock.svg'],
+    link: 'https://imaginify-two-rust.vercel.app/',
+  },
+  {
+    key: '3d_portfolio',
+    color: '#FFE4B5',
+    title: 'Animated 3D Portfolio Website',
+    des: 'An animated portfolio website prototype, combining Framer Motion animations and Three.js 3D effects..',
+    img: '/3d_thumbnail.png',
+    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/next.svg', '/dock.svg'],
+    link: 'https://abdelhadev.netlify.app/',
+  },
+  {
+    key: 'imd',
+    color: '#FFA07A',
+    title: 'Inventory Management Dashboard',
+    des: 'A fullstack inventory management dashboard, using next.js for the front-end and node.js for backend along with prisma ORM. Deployed using AWS EC2, S3 and RDS.  ',
+    img: '/inventory-management.jpeg',
+    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/next.svg', '/dock.svg'],
+    link: 'https://edstockinventory.vercel.app/',
+  },
+];
+
+export interface TestimonialCardDetails {
+  name: string;
+  position: string;
+  src: string;
+  blockquote: string;
+  testimonialVideo: string;
+}
+
+export const testimonialCardDetails: TestimonialCardDetails[] = [
+  {
+    name: 'Mejules',
+    position: 'Founder & CEO, Maria Cars',
+    src: 'https://images.pexels.com/photos/30247059/pexels-photo-30247059/free-photo-of-close-up-portrait-of-a-domestic-tabby-cat.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    blockquote:
+      'This service transformed my business! The team was incredibly helpful, and the results speak for themselves. Highly recommended!',
+    testimonialVideo: '/Testimonials/video.mp4',
+  },
+  {
+    name: 'Sarah Thompson',
+    position: 'Marketing Director, TechInnovate',
+    src: 'https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    blockquote:
+      'A game-changing solution that exceeded our expectations. Their strategic approach delivered remarkable results and transformed our marketing strategy.',
+    testimonialVideo: '/Testimonials/sarah-video.mp4',
+  },
+  {
+    name: 'Michael Rodriguez',
+    position: 'Founder & CEO, GreenSpark Solutions',
+    src: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    blockquote:
+      'Absolutely phenomenal service! Their innovative approach and attention to detail helped us scale our startup more efficiently than we ever imagined.',
+    testimonialVideo: '/Testimonials/michael-video.mp4',
+  },
+  {
+    name: 'Emily Chen',
+    position: 'Chief Operations Officer, DataDrive',
+    src: 'https://images.pexels.com/photos/3775534/pexels-photo-3775534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    blockquote:
+      'Incredibly professional and results-oriented. Their expertise has been instrumental in optimizing our operational processes and driving business growth.',
+    testimonialVideo: '/Testimonials/emily-video.mp4',
+  },
+  {
+    name: 'David Kim',
+    position: 'Head of Product, InnovateTech',
+    src: 'https://images.pexels.com/photos/2380794/pexels-photo-2380794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    blockquote:
+      'A truly transformative partnership. Their insights and strategic guidance have been crucial in reshaping our product development approach.',
+    testimonialVideo: '/Testimonials/david-video.mp4',
+  },
+  {
+    name: 'Rachel Green',
+    position: 'Lead Designer, CreativeSphere',
+    src: 'https://images.pexels.com/photos/3756616/pexels-photo-3756616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    blockquote:
+      "Their creative solutions and deep understanding of our brand have been extraordinary. They've elevated our design strategy to new heights.",
+    testimonialVideo: '/Testimonials/rachel-video.mp4',
+  },
+  {
+    name: 'Alex Nguyen',
+    position: 'CTO, CloudTech Solutions',
+    src: 'https://images.pexels.com/photos/2092474/pexels-photo-2092474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    blockquote:
+      "Cutting-edge technology meets exceptional service. They've been a critical partner in our digital transformation journey.",
+    testimonialVideo: '/Testimonials/alex-video.mp4',
+  },
+];

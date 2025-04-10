@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  height: fit-content;
+  align-items: center;
+}
+
+.projectContainer {
+  position: relative;
+  width: 100%;
+}
+
+.projectContainer div {
+  border-top: 1px solid #0c0c0c;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: -2vw;
+  background-color: #efefef;
+  z-index: 1;
+  padding: 2vw 0;
+}
+
+.projectContainer div p {
+  margin: 0px;
+  font-size: 3vw;
+  padding: 0 10px;
+  text-transform: uppercase;
+  pointer-events: none;
+}
