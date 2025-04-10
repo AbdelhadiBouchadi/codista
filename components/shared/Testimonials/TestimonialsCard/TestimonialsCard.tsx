@@ -15,7 +15,7 @@ export default function TestimonialsCard() {
   };
 
   return (
-    <div className="sm:px-6 tablet:px-16 mt-8">
+    <div className="sm:px-6 tablet:px-16 mt-8" dir="ltr">
       <Swiper
         slidesPerView={5}
         spaceBetween={10}
@@ -34,14 +34,19 @@ export default function TestimonialsCard() {
         }}
         modules={[Pagination, Keyboard]}
         className="mySwiper h-[29rem]"
+        dir="ltr"
       >
         {testimonialCardDetails.map((data, dataIndex) => (
           <SwiperSlide key={dataIndex}>
             <div
               className="relative w-full h-full"
               style={{ perspective: '2000px' }}
+              dir="ltr"
             >
-              <div className="relative transition-all duration-500 w-full h-full">
+              <div
+                className="relative transition-all duration-500 w-full h-full"
+                dir="ltr"
+              >
                 <FrontCard data={data} />
               </div>
             </div>

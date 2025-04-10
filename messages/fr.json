@@ -113,5 +113,10 @@
       "title": "Dashboard de gestion des stocks",
       "descriptio": "Dashboard de gestion des stocks complet, utilisant next.js pour le front-end et node.js pour le back-end, ainsi que Prisma ORM. Déployé via AWS EC2, S3 et RDS."
     }
+  },
+  "TestimonialsSection": {
+    "heading": "Témoignages",
+    "subheading1": "Ne nous croyez pas sur parole!",
+    "subheading2": "Écoutez ce que disent nos clients."
   }
 }

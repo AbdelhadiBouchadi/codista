@@ -1,7 +1,9 @@
 import gsap from 'gsap';
 import { useEffect, useMemo, useRef } from 'react';
-import SplitType from 'split-type';
 import TestimonialsCard from './TestimonialsCard/TestimonialsCard';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useLocale, useTranslations } from 'next-intl';
+import { cn } from '@/lib/utils';
 
 export default function Testimonials() {
   const firstRef = useRef<HTMLHeadingElement>(null);
@@ -10,31 +12,45 @@ export default function Testimonials() {
 
   const testimonialRefs = useMemo(() => [firstRef, secondRef, thirdRef], []);
 
-  useEffect(() => {
-    const splits: SplitType[] = [];
+  const locale = useLocale();
+  const isArabic = locale === 'ar';
+  const t = useTranslations('TestimonialsSection');
 
+  useEffect(() => {
     testimonialRefs.forEach((ref) => {
       if (!ref.current) return;
 
-      const split = new SplitType(ref.current, {
-        types: 'chars',
-        absolute: false,
-      });
+      // Split text into words for animation while preserving spaces
+      const text = ref.current.textContent || '';
+      const words = text.split(/(\s+)/);
+      ref.current.innerHTML = words
+        .map((word) => {
+          // If it's just whitespace, preserve it without wrapping in span
+          if (word.trim() === '') {
+            return word;
+          }
+          return `<span class="inline-block">${word}</span>`;
+        })
+        .join('');
+
+      const wordSpans = ref.current.querySelectorAll('span');
 
       gsap.fromTo(
-        split.chars,
+        wordSpans,
         {
           y: 100,
           opacity: 0,
-          rotationX: -90,
+          scale: 0.5,
+          filter: 'blur(10px)',
         },
         {
           y: 0,
           opacity: 1,
-          rotationX: 0,
-          duration: 1,
-          stagger: 0.02,
-          ease: 'power1.inOut',
+          scale: 1,
+          filter: 'blur(0px)',
+          duration: 1.2,
+          stagger: 0.1,
+          ease: 'power3.out',
           scrollTrigger: {
             trigger: ref.current,
             start: 'top 80%',
@@ -43,29 +59,42 @@ export default function Testimonials() {
           },
         }
       );
-
-      splits.push(split);
     });
 
-    return () => splits.forEach((split) => split.revert());
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
   }, [testimonialRefs]);
 
   return (
     <div
       id="testimonials"
       className="sm:mt-12 tablet:mt-40 w-screen overflow-hidden"
-      dir="ltr"
     >
       <h1
         ref={firstRef}
-        className="milker-font tracking-wider sm:text-3xl mobile_l:text-4xl tablet:text-6xl laptop:text-8xl uppercase perspective-1000 text-alt-white sm:pl-6 tablet:pl-16"
+        className={cn(
+          ' tracking-wider sm:text-3xl mobile_l:text-4xl tablet:text-6xl laptop:text-8xl uppercase perspective-1000 text-alt-white ',
+          isArabic
+            ? 'tajawal-font sm:pr-6 tablet:pr-16'
+            : 'milker-font sm:pl-6 tablet:pl-16'
+        )}
+        dir={isArabic ? 'rtl' : 'ltr'}
       >
-        Testimonials
+        {t('heading')}
       </h1>
 
-      <div className="sm:text-xl mobile_m:text-2xl mobile_l:text-3xl tablet:text-5xl laptop:text-6xl sm:pl-6 tablet:pl-16 sm:mt-2 tablet:mt-8 houseMontage-font">
-        <h2 ref={secondRef}>Don&rsquo;t take my word for it!</h2>
-        <h2 ref={thirdRef}>Hear it from my clients.</h2>
+      <div
+        className={cn(
+          'sm:text-xl mobile_m:text-2xl mobile_l:text-3xl tablet:text-5xl laptop:text-6xl  sm:mt-2 tablet:mt-8',
+          isArabic
+            ? 'sm:pr-6 tablet:pr-16 tajawal-regular'
+            : 'sm:pl-6 tablet:pl-16 houseMontage-font'
+        )}
+        dir={isArabic ? 'rtl' : 'ltr'}
+      >
+        <h2 ref={secondRef}> {t('subheading1')} </h2>
+        <h2 ref={thirdRef}> {t('subheading2')} </h2>
       </div>
 
       <TestimonialsCard />

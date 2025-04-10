@@ -113,5 +113,10 @@
       "title": "Inventory Management Dashboard",
       "descriptio": "A fullstack inventory management dashboard, using next.js for the front-end and node.js for backend along with prisma ORM. Deployed using AWS EC2, S3 and RDS.  "
     }
+  },
+  "TestimonialsSection": {
+    "heading": "Testimonials",
+    "subheading1": "Don't take our word for it!",
+    "subheading2": "Hear it from our clients."
   }
 }
