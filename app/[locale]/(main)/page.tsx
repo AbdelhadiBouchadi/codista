@@ -1,6 +1,8 @@
 'use client';
 import About from '@/components/shared/About/About';
+import Contact from '@/components/shared/Contact/Contact';
 import Cursor from '@/components/shared/Cursor';
+import Doodle from '@/components/shared/Doodle';
 import Hero from '@/components/shared/Hero/Hero';
 import Intro from '@/components/shared/Intro';
 import Projects from '@/components/shared/Projects/Projects';
@@ -29,6 +31,8 @@ export default function Home() {
         <Skills />
         <Projects />
         <Testimonials />
+        <Contact />
+        <Doodle />
       </Transition>
       {/* 
       
@@ -36,8 +40,8 @@ export default function Home() {
       
       
       
-      <Contact />
-      <Doodle />
+      
+      
       <Footer /> */}
     </main>
   );

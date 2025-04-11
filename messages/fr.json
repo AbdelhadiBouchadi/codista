@@ -118,5 +118,36 @@
     "heading": "Témoignages",
     "subheading1": "Ne nous croyez pas sur parole!",
     "subheading2": "Écoutez ce que disent nos clients."
+  },
+  "ContactSection": {
+    "cta": "N'hésitez pas, connectons-nous !",
+    "wtspLink": "Pour une réponse plus rapide",
+    "clickHere": "✺ Cliquez ici",
+    "ContactForm": {
+      "success": "Message envoyé avec succès!",
+      "error": "Échec de l'envoi du message. Veuillez réessayer.",
+      "heading": "Discutons de vos idées de rêve",
+      "name": {
+        "label": "Nom Complet",
+        "placeholder": "Votre Nom Complet",
+        "description": "Quel est votre nom ?",
+        "zod": "Le nom doit comporter au moins 2 caractères."
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Votre Adresse Email",
+        "description": "Envoyez un e-mail pour obtenir une réponse.",
+        "zod": "S'il vous plaît, mettez une adresse email valide."
+      },
+      "hcwh": {
+        "label": "Comment pouvons-nous vous aider ?",
+        "placeholder": "Parlez-nous davantage de votre projet",
+        "description": "Pour une meilleure compréhension."
+      },
+      "contactButton": {
+        "loading": "En cours...",
+        "default": "Envoyer 👋"
+      }
+    }
   }
 }

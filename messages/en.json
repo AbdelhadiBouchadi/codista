@@ -118,5 +118,36 @@
     "heading": "Testimonials",
     "subheading1": "Don't take our word for it!",
     "subheading2": "Hear it from our clients."
+  },
+  "ContactSection": {
+    "cta": "Don't hesitate , let's connect !",
+    "wtspLink": "For faster response",
+    "clickHere": "✺ Click here",
+    "ContactForm": {
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again.",
+      "heading": "Let's chat about your dream ideas",
+      "name": {
+        "label": "Name",
+        "placeholder": "Your Name",
+        "description": "Let us know your name.",
+        "zod": "Name must be at least 2 characters."
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Your Email Address",
+        "description": "Email for reply back.",
+        "zod": "Please enter a valid email address."
+      },
+      "hcwh": {
+        "label": "How Can We Help ?",
+        "placeholder": "Tell us more about your project",
+        "description": "For better understanding."
+      },
+      "contactButton": {
+        "loading": "Sending...",
+        "default": "Send Message 👋"
+      }
+    }
   }
 }
