@@ -11,7 +11,7 @@ if (typeof window !== 'undefined') {
 
 interface ProjectLinkProps {
   link: string;
-  title: string;
+  title?: string;
 }
 
 export function ProjectLink({ link, title }: ProjectLinkProps) {
@@ -24,7 +24,6 @@ export function ProjectLink({ link, title }: ProjectLinkProps) {
     if (!containerRef.current || !buttonRef.current) return;
 
     const ctx = gsap.context(() => {
-      // Initial state
       gsap.set(buttonRef.current, {
         opacity: 0,
         scale: 0.8,
@@ -36,7 +35,15 @@ export function ProjectLink({ link, title }: ProjectLinkProps) {
         scale: 0.5,
       });
 
-      // Entrance animation
+      const sparkleElements = sparklesRef.current?.children;
+      if (sparkleElements) {
+        gsap.set(sparkleElements, {
+          opacity: 0,
+          scale: 0,
+          rotation: 0,
+        });
+      }
+
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: containerRef.current,
@@ -51,18 +58,63 @@ export function ProjectLink({ link, title }: ProjectLinkProps) {
         y: 0,
         duration: 0.8,
         ease: 'back.out(1.7)',
-      }).to(
-        glowRef.current,
-        {
-          opacity: 0.6,
-          scale: 1,
-          duration: 0.6,
-          ease: 'power2.out',
-        },
-        '-=0.4'
-      );
+      })
+        .to(
+          glowRef.current,
+          {
+            opacity: 0.6,
+            scale: 1,
+            duration: 0.6,
+            ease: 'power2.out',
+          },
+          '-=0.4'
+        )
 
-      // Hover animations
+        .to(
+          sparkleElements!,
+          {
+            opacity: 1,
+            scale: 1,
+            rotation: 360,
+            duration: 0.8,
+            stagger: 0.15,
+            ease: 'back.out(1.7)',
+          },
+          '-=0.2'
+        );
+
+      if (sparkleElements) {
+        gsap.to(sparkleElements, {
+          y: -10,
+          duration: 2,
+          ease: 'sine.inOut',
+          yoyo: true,
+          repeat: -1,
+          stagger: 0.3,
+          delay: 1,
+        });
+
+        gsap.to(sparkleElements, {
+          rotation: '+=360',
+          duration: 8,
+          ease: 'none',
+          repeat: -1,
+          stagger: 0.5,
+          delay: 1.5,
+        });
+
+        // Subtle scale pulsing
+        gsap.to(sparkleElements, {
+          scale: 1.2,
+          duration: 3,
+          ease: 'sine.inOut',
+          yoyo: true,
+          repeat: -1,
+          stagger: 0.4,
+          delay: 2,
+        });
+      }
+
       const button = buttonRef.current;
       const glow = glowRef.current;
 
@@ -78,6 +130,14 @@ export function ProjectLink({ link, title }: ProjectLinkProps) {
           duration: 0.3,
           ease: 'power2.out',
         });
+
+        if (sparkleElements) {
+          gsap.to(sparkleElements, {
+            scale: 1.4,
+            duration: 0.3,
+            ease: 'power2.out',
+          });
+        }
       });
 
       button?.addEventListener('mouseleave', () => {
@@ -92,46 +152,21 @@ export function ProjectLink({ link, title }: ProjectLinkProps) {
           duration: 0.3,
           ease: 'power2.out',
         });
-      });
 
-      // Sparkles animation
-      const sparkleElements = sparklesRef.current?.children;
-      if (sparkleElements) {
-        gsap.set(sparkleElements, {
-          opacity: 0,
-          scale: 0,
-          rotation: 0,
-        });
-
-        const sparkleAnimation = gsap.timeline({ repeat: -1, duration: 4 });
-        sparkleAnimation
-          .to(sparkleElements, {
-            opacity: 1,
+        if (sparkleElements) {
+          gsap.to(sparkleElements, {
             scale: 1,
-            rotation: 360,
-            duration: 0.6,
-            stagger: 0.2,
-            ease: 'back.out(1.7)',
-          })
-          .to(
-            sparkleElements,
-            {
-              opacity: 0,
-              scale: 0,
-              duration: 0.4,
-              stagger: 0.1,
-              ease: 'power2.in',
-            },
-            '+=1'
-          );
-      }
+            duration: 0.3,
+            ease: 'power2.out',
+          });
+        }
+      });
     }, containerRef);
 
     return () => ctx.revert();
   }, []);
 
   const handleClick = () => {
-    // Add a subtle animation on click
     if (buttonRef.current) {
       gsap.to(buttonRef.current, {
         scale: 0.95,
@@ -159,25 +194,25 @@ export function ProjectLink({ link, title }: ProjectLinkProps) {
         <Sparkles className="absolute bottom-0 right-1/3 w-3 h-3 text-blue-300" />
       </div>
 
-      {/* Main button - matching aurora colors */}
+      {/* Main button  */}
       <a
         ref={buttonRef}
         href={link}
         target="_blank"
         rel="noopener noreferrer"
         onClick={handleClick}
-        className="relative group px-8 py-4 bg-gradient-to-r from-blue-500 via-indigo-300 to-violet-200 rounded-full text-white font-semibold text-lg hover:shadow-2xl transition-all duration-300 flex items-center gap-3 z-10"
+        className="relative group px-8 py-4 bg-gradient-to-r from-blue-500 via-indigo-300 to-violet-200 rounded-full text-white font-semibold text-lg hover:shadow-2xl transition-all duration-300 flex items-center gap-3 z-10 text-center"
       >
         {/* Button content */}
         <span className="relative z-10 text-slate-900 font-bold">
-          Visit {title}
+          Visit Live Website
         </span>
         <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 relative z-10 text-slate-900" />
 
-        {/* Animated border - matching aurora colors */}
+        {/* Animated border  */}
         <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 via-indigo-200 to-violet-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
 
-        {/* Inner background - matching aurora colors */}
+        {/* Inner background */}
         <div className="absolute inset-[2px] rounded-full bg-gradient-to-r from-blue-500 via-indigo-300 to-violet-200 group-hover:from-blue-400 group-hover:via-indigo-200 group-hover:to-violet-100 transition-all duration-300"></div>
       </a>
     </div>
