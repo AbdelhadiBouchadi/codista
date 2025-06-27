@@ -127,7 +127,7 @@ export default function Intro() {
       <div className="relative h-full flex items-center justify-center">
         <div ref={textRef} className="text-alt-black z-10">
           <h1 id="animated-text" className="sm:text-6xl tablet:text-8xl">
-            CODISTA
+            ABDELHADEV
             <span className="text-4xl align-super">&trade;</span>
           </h1>
           <div className="mt-4 text-3xl text-center tracking-widest portfolio-text">

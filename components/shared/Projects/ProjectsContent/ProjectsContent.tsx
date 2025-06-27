@@ -1,6 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import gsap from 'gsap';
-import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import styles from './Home.module.css';
@@ -57,7 +56,7 @@ export default function ProjectsContent() {
                 setIsShowMore(null);
               }}
               key={index}
-              className="sm:px-3.5 tablet:px-4 laptop:px-16 flex justify-between items-center gap-4 relative"
+              className="sm:px-3.5 tablet:px-4 laptop:px-16 py-[2vw] flex justify-between items-center gap-4 relative"
             >
               <p className={cn(isArabic && 'tajawal-font')}>{title}</p>
 

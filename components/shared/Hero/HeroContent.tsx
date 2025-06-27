@@ -18,7 +18,7 @@ export default function HeroContent() {
       <motion.h1
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ ease: 'easeInOut', delay: 4 }}
+        transition={{ ease: 'easeInOut', delay: 3 }}
         className={cn(
           'sm:text-5xl tablet:text-7xl ',
           isArabic ? 'text-right tajawal-font mb-5' : 'text-left milker-font'
@@ -29,7 +29,7 @@ export default function HeroContent() {
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ ease: 'easeInOut', delay: 4.5 }}
+        transition={{ ease: 'easeInOut', delay: 3.2 }}
         className={`${inter.className} w-[90%] laptop:w-1/2 lowercase ${
           isArabic
             ? 'sm:text-lg tablet:text-2xl tajawal-regular'
@@ -42,7 +42,7 @@ export default function HeroContent() {
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ ease: 'easeInOut', delay: 5 }}
+        transition={{ ease: 'easeInOut', delay: 3.4 }}
         className={cn(
           'sm:text-base tablet:text-lg sm:w-[90%] laptop:w-3/5 py-8 text-justify ',
           isArabic && 'tajawal-regular'
@@ -54,7 +54,7 @@ export default function HeroContent() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ ease: 'easeInOut', delay: 5.5 }}
+        transition={{ ease: 'easeInOut', delay: 3.6 }}
         className="sm:w-[90%] laptop:w-3/5"
       >
         <h4

@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     description:
       "I'm Abdelhadi — a full-stack developer specializing in fullstack web and mobile app development, UI/UX design. I build thoughtful, performant digital experiences that bring your ideas to life. Let’s connect — I regularly share updates and projects.",
     url: 'https://www.abdelhadev.com',
-    siteName: 'Codista Portfolio',
+    siteName: 'Abdelhadev Portfolio',
     locale: 'en_US',
     type: 'website',
     images: [

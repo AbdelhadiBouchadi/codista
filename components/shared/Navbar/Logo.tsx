@@ -7,8 +7,8 @@ export default function Logo() {
       <motion.div
         initial={{ opacity: 0, y: '100%' }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ ease: 'easeInOut', duration: 1, delay: 4 }}
-        title="Codista - Portfolio"
+        transition={{ ease: 'easeInOut', duration: 1, delay: 3 }}
+        title="Abdelhadi - Portfolio"
         className="houseMontage-font relative z-10 sm:text-sm laptop:text-lg uppercase font-semibold flex justify-center items-center gap-2"
       >
         <p className="text-white tracking-widest">ABDELHADEV</p>

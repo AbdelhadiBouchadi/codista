@@ -31,7 +31,7 @@ export default function ContactFormEmail({
         <title>New Contact Form Submission</title>
       </Head>
       <Preview>
-        New message from {senderName} via CODISTA Portfolio Contact Form
+        New message from {senderName} via Abdelhadev Portfolio Contact Form
       </Preview>
       <Tailwind>
         <Body className="bg-[#f6f6f6] my-auto mx-auto font-sans">
@@ -85,8 +85,8 @@ export default function ContactFormEmail({
               {/* Footer */}
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <Text className="text-center text-gray-500 text-sm">
-                  This email was sent from CODISTA portfolio contact form.
-                  <br />© {new Date().getFullYear()} CODISTA Portfolio. All
+                  This email was sent from ABDELHADEV portfolio contact form.
+                  <br />© {new Date().getFullYear()} ABDELHADEV Portfolio. All
                   rights reserved.
                 </Text>
               </div>

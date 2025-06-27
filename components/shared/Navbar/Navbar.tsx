@@ -1,9 +1,10 @@
 'use client';
+
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
 import { MouseEvent, useState } from 'react';
 import Logo from './Logo';
-import Pricing from './Pricing';
 import LocaleDropdown from './LocaleDropdown/LocaleDropdown';
+import Menus from './Menus/Menu';
 
 export default function Navbar() {
   const { scrollY } = useScroll();
@@ -21,15 +22,16 @@ export default function Navbar() {
     <motion.div
       className="fixed top-0 w-full flex justify-between items-center sm:px-4 laptop:px-10 sm:py-2 laptop:py-1.5 border-b-2 border-alt-white bg-transparent backdrop-blur-sm z-[99]"
       animate={{ y: hidden ? -100 : 0 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.1 }}
       onContextMenu={(e: MouseEvent) => {
         e.preventDefault();
       }}
       dir="ltr"
     >
       <Logo />
-      <div className="flex justify-center items-center gap-2">
+      <div className="flex justify-center items-center ">
         <LocaleDropdown />
+        <Menus />
       </div>
     </motion.div>
   );

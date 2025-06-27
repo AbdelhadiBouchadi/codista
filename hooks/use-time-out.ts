@@ -8,6 +8,7 @@ import { useEffect } from 'react';
  * @param {number} params.duration
  * @param {import('react').DependencyList} params.deps
  */
+
 export function useTimeOut({
   callback,
   duration = 100,

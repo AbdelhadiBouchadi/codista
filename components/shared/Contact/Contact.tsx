@@ -27,7 +27,8 @@ export default function Contact() {
       className="h-fit w-screen overflow-hidden"
       ref={container}
     >
-      <SVGCurve paths={paths} /> <ContactForm />
+      <SVGCurve paths={paths} />
+      <ContactForm />
     </div>
   );
 }

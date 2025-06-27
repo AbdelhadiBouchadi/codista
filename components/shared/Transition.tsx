@@ -95,18 +95,18 @@ function IntroLoader() {
     >
       {dimension.width > 0 && (
         <>
-          <div className="relative h-full flex items-center justify-center">
+          <div className="relative h-full flex items-center justify-center w-96">
             <motion.div
               variants={opacity}
               initial="initial"
               animate="enter"
               className="text-alt-black z-[1]"
             >
-              <h1 id="animated-text" className="sm:text-6xl tablet:text-8xl">
+              <h1 id="animated-text" className="text-4xl tablet:text-8xl">
                 ABDELHADEV
-                <span className="text-4xl align-super">™</span>
+                <span className="text-2xl tablet:text-4xl align-super">™</span>
               </h1>
-              <div className="mt-4 text-3xl text-center tracking-widest portfolio-text">
+              <div className="mt-4 text-2xl tablet:text-3xl text-center tracking-widest portfolio-text">
                 PORTFOLIO
               </div>
             </motion.div>

@@ -65,7 +65,7 @@ export const socials = [
   {
     key: 'mail',
     name: 'Mail',
-    href: 'mailto:codista.srv@gmail.com',
+    href: 'mailto:abdelhadibouchadi2@gmail.com',
   },
   {
     key: 'wtsp',
@@ -75,7 +75,7 @@ export const socials = [
   {
     key: 'insta',
     name: 'Instagram',
-    href: 'https://www.instagram.com/codista.srv/',
+    href: 'https://www.instagram.com/abdelhadi0812/',
   },
 ];
 
@@ -91,11 +91,11 @@ export const socialMenus: SocialMenus[] = [
   },
   {
     name: 'IG',
-    href: 'https://www.instagram.com/codista.srv/',
+    href: 'https://www.instagram.com/abdelhadi0812/',
   },
   {
     name: 'GM',
-    href: 'mailto:codista.srv@gmail.com',
+    href: 'mailto:abdelhadibouchadi2@gmail.com',
   },
 ];
 
