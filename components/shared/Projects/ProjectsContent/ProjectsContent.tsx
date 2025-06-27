@@ -46,8 +46,7 @@ export default function ProjectsContent() {
           return (
             <div
               onClick={() => {
-                const formattedTitle = encodeURIComponent(project.title);
-                router.push(`/projects/${formattedTitle}`);
+                router.push(`/projects/${project.key}`);
               }}
               onMouseEnter={(e) => {
                 manageMouseEnter(e, index);

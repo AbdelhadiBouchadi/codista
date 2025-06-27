@@ -11,11 +11,6 @@ import TailwindSvg from '@/components/shared/Skills/SVGs/TailwindCSS';
 import TypescriptSVG from '@/components/shared/Skills/SVGs/Typescript';
 import VercelSVG from '@/components/shared/Skills/SVGs/Vercel';
 
-interface FooterMenuItem {
-  href: string;
-  name: string;
-}
-
 export interface MenuItem {
   key: string;
   href: string;
@@ -50,29 +45,6 @@ export const menuItems: MenuItem[] = [
   },
 ];
 
-export const footerMenuItem: FooterMenuItem[] = [
-  {
-    href: '#about',
-    name: 'About',
-  },
-  {
-    href: '#services',
-    name: 'Services',
-  },
-  {
-    href: '#projects',
-    name: 'Projects',
-  },
-  {
-    href: '#contacts',
-    name: 'Contacts',
-  },
-  {
-    href: '#testimonials',
-    name: 'Testimonials',
-  },
-];
-
 interface ServicesItem {
   id: string;
   label: string;
@@ -90,13 +62,18 @@ export const servicesItems: ServicesItem[] = [
 ];
 
 export const socials = [
-  { name: 'Mail', href: 'mailto:codista.srv@gmail.com' },
-
   {
+    key: 'mail',
+    name: 'Mail',
+    href: 'mailto:codista.srv@gmail.com',
+  },
+  {
+    key: 'wtsp',
     name: 'Whatsapp',
     href: 'https://wa.me/+905526417998?text=Hello!%20I%27m%20interested%20in%20your%20services.%20Could%20you%20please%20provide%20more%20details%3F',
   },
   {
+    key: 'insta',
     name: 'Instagram',
     href: 'https://www.instagram.com/codista.srv/',
   },
@@ -208,6 +185,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    key: 'ai',
+    color: '#FFFFC0',
+    title: 'MeetAI - an AI Powered Meeting Plateform',
+    des: 'An AI-powered meeting plateform that transcribes, summarizes, and allows meetings in real-time with an AI agent. Built with Next.js 15, tRPC, DrizzleORM, and OpenAI API',
+    img: '/p3.svg',
+    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/next.svg', '/dock.svg'],
+    link: 'https://meetai-omega.vercel.app/',
+  },
+  {
+    key: 'luxury',
+    color: '#FFE4B5',
+    title: 'Côte Royale - Luxury Brand Website',
+    des: 'A luxury-focused website with a strong emphasis on interactivity and visual flow using Next.js 15 and GSAP along with prismic.io',
+    img: '/luxury.png',
+    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/next.svg', '/dock.svg'],
+    link: 'https://cote-royale-ecru.vercel.app/',
+  },
+  {
     key: 'hms',
     color: '#FFD1DC',
     title: 'Hospital Management System',
@@ -243,33 +238,6 @@ export const projects: Project[] = [
     img: '/carepulse.png',
     iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/next.svg', '/dock.svg'],
     link: 'https://carepulse-two-lime.vercel.app/',
-  },
-  {
-    key: 'ai',
-    color: '#FFFFC0',
-    title: 'AI Image SaaS - Canva Application',
-    des: 'A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.',
-    img: '/p3.svg',
-    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/next.svg', '/dock.svg'],
-    link: 'https://imaginify-two-rust.vercel.app/',
-  },
-  {
-    key: '3d_portfolio',
-    color: '#FFE4B5',
-    title: 'Animated 3D Portfolio Website',
-    des: 'An animated portfolio website prototype, combining Framer Motion animations and Three.js 3D effects..',
-    img: '/3d_thumbnail.png',
-    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/next.svg', '/dock.svg'],
-    link: 'https://abdelhadev.netlify.app/',
-  },
-  {
-    key: 'imd',
-    color: '#FFA07A',
-    title: 'Inventory Management Dashboard',
-    des: 'A fullstack inventory management dashboard, using next.js for the front-end and node.js for backend along with prisma ORM. Deployed using AWS EC2, S3 and RDS.  ',
-    img: '/inventory-management.jpeg',
-    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/next.svg', '/dock.svg'],
-    link: 'https://edstockinventory.vercel.app/',
   },
 ];
 
@@ -337,5 +305,39 @@ export const testimonialCardDetails: TestimonialCardDetails[] = [
     blockquote:
       "Cutting-edge technology meets exceptional service. They've been a critical partner in our digital transformation journey.",
     testimonialVideo: '/Testimonials/alex-video.mp4',
+  },
+];
+
+export interface FooterMenuItem {
+  key: string;
+  href: string;
+  name: string;
+}
+
+export const footerMenuItem: FooterMenuItem[] = [
+  {
+    key: 'about',
+    href: '#about',
+    name: 'About',
+  },
+  {
+    key: 'services',
+    href: '#services',
+    name: 'Services',
+  },
+  {
+    key: 'projects',
+    href: '#projects',
+    name: 'Projects',
+  },
+  {
+    key: 'contacts',
+    href: '#contacts',
+    name: 'Contacts',
+  },
+  {
+    key: 'testimonials',
+    href: '#testimonials',
+    name: 'Testimonials',
   },
 ];

@@ -8,7 +8,7 @@ import ContactFormEmail from '@/email/contact-form-email';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
-  const senderEmail = formData.get('name');
+  const senderEmail = formData.get('email');
   const message = formData.get('hcwh');
   const senderName = formData.get('name');
 
@@ -42,6 +42,8 @@ export const sendEmail = async (formData: FormData) => {
         senderName: senderName,
       }),
     });
+
+    console.log(data);
   } catch (error: unknown) {
     return {
       error: getErrorMessage(error),

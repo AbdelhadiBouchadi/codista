@@ -1,4 +1,3 @@
-import { Tranquiluxe } from 'uvcanvas';
 import HeroContent from './HeroContent';
 import { VelocityScroll } from '@/components/ui/scroll-based-velocity';
 import { useLocale, useTranslations } from 'next-intl';
@@ -12,11 +11,9 @@ export default function Hero() {
 
   return (
     <AuroraBackground data-scroll-container>
-      <div></div>
       <div className="absolute sm:inset-5 tablet:inset-10 laptop_l:inset-20 text-alt-white z-10 text-center w-screen sm:py-12 tablet:py-24">
         <HeroContent />
       </div>
-      {/* <Tranquiluxe /> */}
 
       <div className="absolute bottom-0 w-full">
         <VelocityScroll

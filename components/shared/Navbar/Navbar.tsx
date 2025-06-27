@@ -30,7 +30,6 @@ export default function Navbar() {
       <Logo />
       <div className="flex justify-center items-center gap-2">
         <LocaleDropdown />
-        <Pricing />
       </div>
     </motion.div>
   );

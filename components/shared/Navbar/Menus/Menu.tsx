@@ -1,4 +1,5 @@
 'use client';
+
 import { AnimatePresence } from 'framer-motion';
 import { MouseEvent, useState } from 'react';
 import Burger from './Burger/Burger';

@@ -5,9 +5,9 @@
   "Hero": {
     "welcome": "bienvenue",
     "tagline": "✦ Vous êtes au bon endroit pour faire passer votre présence numérique au niveau supérieur ✦",
-    "intro": "Bienvenue chez CODISTA — là où la créativité rencontre le code de pointe. Nous ne construisons pas seulement des sites web et des applications ; nous créons des expériences numériques qui captivent et convertissent. Que vous lanciez une nouvelle marque audacieuse ou que vous en réimaginiez une existante, notre équipe transforme votre vision en designs élégants et performants. Besoin d’un portfolio impressionnant, d’une boutique e-commerce fluide ou d’une application mobile sur mesure ? Vous venez de trouver votre équipe de rêve digitale. Construisons l'excellence ensemble.",
-    "visionTitle": "Portés par la vision",
-    "visionText": "Chez Codista, nous collaborons avec des créateurs passionnés, des startups et des rêveurs pour donner vie aux idées digitales. Faites partie de l'aventure.",
+    "intro": "Je suis Abdelhadev — développeur passionné, créatif et rigoureux. Je ne me contente pas de coder des sites web ou des applications : je conçois des expériences numériques uniques, pensées pour marquer les esprits et atteindre vos objectifs. Que vous soyez entrepreneur, artiste, ou une startup en devenir, je vous aide à transformer vos idées en solutions digitales performantes, élégantes et sur mesure.",
+    "visionTitle": "Ma vision",
+    "visionText": "Je collabore avec des esprits créatifs, des marques audacieuses et des passionnés du digital pour bâtir des projets qui ont du sens. Ensemble, donnons vie à vos ambitions numériques.",
     "scroll": "✺ faites défiler pour explorer"
   },
   "NotFound": {
@@ -16,7 +16,7 @@
   "Nav": {
     "About": {
       "title": "A Propos",
-      "description": "Qui sommes-nous?"
+      "description": "Qui suis-je?"
     },
     "Services": {
       "title": "Services",
@@ -28,7 +28,7 @@
     },
     "Testimonials": {
       "title": "Témoignages",
-      "description": "Ce que disent nos clients"
+      "description": "Ce que disent mes clients"
     },
     "Contacts": {
       "title": "Contacts",
@@ -71,8 +71,8 @@
         "description": "Développer des systèmes de gestion de contenu personnalisés qui vous permettent de gérer votre contenu sans effort."
       },
       "seo": {
-        "heading": "SEO & Digital Marketing",
-        "description": "Mettre en œuvre des stratégies de référencement efficaces et des campagnes de marketing numérique pour booster votre visibilité en ligne."
+        "heading": "SEO",
+        "description": "Mettre en œuvre des stratégies de référencement efficaces pour booster votre visibilité en ligne."
       },
       "more": {
         "heading": "Plus de services",
@@ -87,31 +87,57 @@
     "heading": "Projets en vedette",
     "hms": {
       "title": "Système de gestion hospitalière",
-      "description": "Un système de gestion hospitalière complet pour gérer les données des patients, des médecins et des rendez-vous. Next.js pour le front-end et le back-end, MongoDB avec Prisma ORM et next-auth 5."
+      "description": "Un système de gestion hospitalière complet pour gérer les données des patients, des médecins et des rendez-vous. Next.js pour le front-end et le back-end, MongoDB avec Prisma ORM et next-auth 5.",
+      "text1": "Cette application a été développée spécifiquement pour les ophtalmologues et les équipes médicales. Construite avec Next.js, MongoDB, Prisma ORM et BetterAuth, elle garantit que seuls les médecins autorisés peuvent accéder à la plateforme. L’accès est accordé manuellement par un administrateur afin d’assurer la sécurité et la confidentialité des données patients.",
+      "text2": "Une fois connectés, les médecins peuvent créer et gérer les dossiers des patients, ajouter des antécédents médicaux, mettre à jour les informations, et planifier des rendez-vous. Chaque patient dispose d’une page dédiée pour un suivi optimal.",
+      "text3": "La plateforme étant conçue pour l’ophtalmologie, les médecins peuvent ajouter des images des yeux du patient, accompagnées d’une description pour chaque image. Cela permet une documentation visuelle détaillée de l’état du patient.",
+      "text4": "Les rendez-vous sont affichés dans un calendrier hebdomadaire dynamique grâce à React Big Calendar, offrant une vue claire et interactive de toutes les consultations programmées.",
+      "link": "https://ophtachusm-submain.vercel.app/"
     },
     "ecom": {
       "title": "FlowShop - Plateforme e-commerce complète",
-      "description": "Une plateforme E-commerce complète utilisant Next js 15, ReactQuery, Tailwindcss, Typescript et l'API Wix"
+      "description": "Une plateforme E-commerce complète utilisant Next js 15, ReactQuery, Tailwindcss, Typescript et l'API Wix",
+      "text1": "FlowShop est une plateforme e-commerce moderne et dynamique développée avec les dernières technologies comme Next.js 15, Shadcn UI et ReactQuery. Elle s’intègre parfaitement à l’API Wix pour gérer à la fois le front-end et le back-end.",
+      "text2": "Un tableau de bord administrateur intuitif permet de gérer l’inventaire de manière complète. Les produits peuvent être ajoutés, modifiés ou supprimés, et les changements sont reflétés instantanément sur le site en ligne sans aucun délai.",
+      "text3": "Les visiteurs du site peuvent facilement parcourir les produits grâce à des options de filtrage avancées. L’expérience utilisateur est fluide et réactive grâce aux requêtes optimisées et aux mises à jour en temps réel assurées par TanStack ReactQuery.",
+      "text4": "L’authentification et la gestion des comptes sont prises en charge par Wix, garantissant un système sécurisé et évolutif sans avoir à implémenter un système d’authentification personnalisé.",
+      "link": "https://flowshop-nine.vercel.app/"
     },
     "phone": {
       "title": "CaseCobra - Coques iPhone personnalisées",
-      "description": "Un créateur de coques iPhone personnalisées Boutique E-commerce avec quelques fonctionnalités intéressantes"
+      "description": "Un créateur de coques iPhone personnalisées Boutique E-commerce avec quelques fonctionnalités intéressantes",
+      "text1": "CaseCobra est une plateforme e-commerce interactive qui permet aux utilisateurs de concevoir leurs propres coques d’iPhone personnalisées. Elle a été développée avec Next.js 14 et utilise Kinde pour l’authentification des utilisateurs.",
+      "text2": "La fonctionnalité principale de la plateforme est la possibilité de télécharger ou de générer des images personnalisées et de les visualiser en temps réel sur une maquette réaliste de coque iPhone. Cela permet aux utilisateurs de voir précisément à quoi ressemblera leur produit final.",
+      "text3": "Le moteur de personnalisation effectue un rendu complexe pour s’assurer que chaque design s’intègre parfaitement dans le cadre de la coque, tout en conservant la qualité et les proportions.",
+      "text4": "Une fois la conception finalisée, l’utilisateur peut passer à l’achat via un processus de paiement sécurisé et fluide grâce à Stripe.",
+      "link": "https://casecobra-phonecase.vercel.app/"
     },
     "pms": {
       "title": "CarePulse - Un système de gestion des soins de santé",
-      "description": "Un système de gestion des patients convivial pour l'utilisateur et l'administrateur qui comprend les dossiers médicaux des patients et bien d'autres fonctionnalités. "
+      "description": "Un système de gestion des patients convivial pour l'utilisateur et l'administrateur qui comprend les dossiers médicaux des patients et bien d'autres fonctionnalités. ",
+      "text1": "CarePulse est un système moderne de prise de rendez-vous médicaux développé avec Next.js 14. Les patients peuvent facilement réserver un rendez-vous en ligne en remplissant leurs informations de base : nom, adresse, numéro de téléphone, et en sélectionnant le médecin, la date et l'heure disponibles.",
+      "text2": "La plateforme comprend un tableau de bord administrateur sécurisé par un système OTP, permettant aux médecins et au personnel médical de consulter les rendez-vous à venir et de les approuver, les annuler ou les reporter selon leurs disponibilités.",
+      "text3": "Le système offre une expérience fluide et professionnelle à la fois pour les patients et les professionnels de santé, facilitant la communication et l’organisation.",
+      "text4": "Une fois le rendez-vous confirmé, le patient reçoit un SMS contenant tous les détails (date, heure, médecin) grâce à l'intégration de l'API Twilio — améliorant ainsi la transparence et réduisant les absences.",
+      "link": "https://carepulse-two-lime.vercel.app/"
     },
     "ai": {
-      "title": "Application SaaS pour images IA - Canva",
-      "description": "Une VRAIE application Software-as-a-Service avec des fonctionnalités d'IA et un système de paiement et de crédit utilisant la dernière pile technologique."
+      "title": "MeetAI - une plateforme de réunion alimentée par l'IA",
+      "description": "Une plateforme de réunion optimisée par l'IA qui transcrit, synthétise et organise des réunions en temps réel avec un agent IA. Conçue avec Next.js 15, tRPC, DrizzleORM et l'API OpenAI.",
+      "text1": "MeetAI est une plateforme innovante qui combine l'intelligence artificielle et les technologies web modernes pour réinventer l’expérience des réunions en ligne. Elle permet à chaque utilisateur de créer son propre agent IA personnalisé, auquel il peut fournir des instructions spécifiques avant de démarrer une réunion.",
+      "text2": "Une fois l’agent IA configuré, l’utilisateur peut lancer une réunion en temps réel via l’intégration de l’API GetStream. Cette réunion se déroule comme un échange vocal fluide entre l’utilisateur et l’agent intelligent, simulant un véritable interlocuteur numérique.",
+      "text3": "À la fin de la réunion, un résumé automatique est généré grâce à l’API d’OpenAI, accompagné d’une transcription complète de l’échange. L’enregistrement de la réunion est également sauvegardé pour une consultation ultérieure dans un onglet dédié.",
+      "text4": "En complément, une interface de chat conversationnel est disponible pour poursuivre l’interaction avec l’agent IA même après la réunion. Le projet est construit avec Next.js 15, tRPC, PostgreSQL (Neon), DrizzleORM, et ReactQuery, garantissant à la fois performance, réactivité et robustesse.",
+      "link": "https://meetai-omega.vercel.app/"
     },
-    "3d_portfolio": {
-      "title": "Site Web de portfolio animé en 3D",
-      "description": "Un prototype de site Web de portfolio animé, combinant des animations Framer Motion et des effets 3D Three.js."
-    },
-    "imd": {
-      "title": "Dashboard de gestion des stocks",
-      "descriptio": "Dashboard de gestion des stocks complet, utilisant next.js pour le front-end et node.js pour le back-end, ainsi que Prisma ORM. Déployé via AWS EC2, S3 et RDS."
+    "luxury": {
+      "title": "Côte Royale - Site Web de marque de luxe",
+      "description": "Un site Web axé sur le luxe avec un fort accent sur l'interactivité et le flux visuel utilisant Next.js 15 et GSAP avec prismic.io",
+      "text1": "Côte Royale est un site vitrine conçu pour illustrer l’esthétique et la performance d’une marque haut de gamme. Développé avec Next.js 15 et stylisé avec Tailwind CSS, il offre une expérience fluide et élégante.",
+      "text2": "Le projet intègre pleinement GSAP afin de créer des animations fluides qui valorisent l’image de marque, renforcent son identité et captivent l’utilisateur dès les premières interactions.",
+      "text3": "Le flux visuel a été pensé avec soin pour refléter le caractère premium de la marque, en associant performance technique et transitions subtiles.",
+      "text4": "Le contenu est géré via Prismic.io, un CMS simple d’utilisation permettant au client de mettre à jour facilement les textes et images, tout en conservant l’intégrité du design.",
+      "link": "https://cote-royale-ecru.vercel.app/"
     }
   },
   "TestimonialsSection": {
@@ -148,6 +174,22 @@
         "loading": "En cours...",
         "default": "Envoyer 👋"
       }
+    }
+  },
+  "Footer": {
+    "copyright": "Tous droits réservés",
+    "thankYou": "Merci d'avoir visité notre portfolio!",
+    "menu": {
+      "about": "A Propos",
+      "services": "Services",
+      "projects": "Projets",
+      "contacts": "Contact",
+      "testimonials": "Témoignages"
+    },
+    "socials": {
+      "mail": "GMail",
+      "wtsp": "WhatsApp",
+      "insta": "Instagram"
     }
   }
 }

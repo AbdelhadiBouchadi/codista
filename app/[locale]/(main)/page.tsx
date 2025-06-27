@@ -1,10 +1,10 @@
 'use client';
+
 import About from '@/components/shared/About/About';
 import Contact from '@/components/shared/Contact/Contact';
 import Cursor from '@/components/shared/Cursor';
 import Doodle from '@/components/shared/Doodle';
 import Hero from '@/components/shared/Hero/Hero';
-import Intro from '@/components/shared/Intro';
 import Projects from '@/components/shared/Projects/Projects';
 import Services from '@/components/shared/Services/Services';
 import { Skills } from '@/components/shared/Skills/Skills';
@@ -34,15 +34,6 @@ export default function Home() {
         <Contact />
         <Doodle />
       </Transition>
-      {/* 
-      
-     
-      
-      
-      
-      
-      
-      <Footer /> */}
     </main>
   );
 }

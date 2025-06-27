@@ -11,7 +11,7 @@ export default function Logo() {
         title="Codista - Portfolio"
         className="houseMontage-font relative z-10 sm:text-sm laptop:text-lg uppercase font-semibold flex justify-center items-center gap-2"
       >
-        <p className="text-white tracking-widest">CODISTA</p>
+        <p className="text-white tracking-widest">ABDELHADEV</p>
         <span className="text-white text-base font-sans absolute sm:-top-1 laptop:top-0 sm:-right-4 laptop:-right-5">
           &trade;
         </span>

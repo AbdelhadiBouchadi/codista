@@ -5,9 +5,9 @@
   "Hero": {
     "welcome": "welcome",
     "tagline": "✦ You're in the right place to take your digital presence to the next level ✦",
-    "intro": "Welcome to CODISTA — where creativity meets cutting-edge code. We don't just build websites and apps; we craft digital experiences that captivate and convert. Whether you're launching a bold new brand or refreshing an existing one, our team transforms your vision into sleek, high-performing designs that leave a lasting impact. Need a stunning portfolio, a seamless eCommerce store, or a custom mobile app that works like magic? You've just found your digital dream team. Let’s build brilliance together.",
+    "intro": "I'm Abdelhadev — a passionate, creative, and detail-oriented developer. I don't just code websites or apps: I craft digital experiences that leave a lasting impression and help you reach your goals. Whether you're an entrepreneur, an artist, or an up-and-coming startup, I help turn your ideas into sleek, tailored, and high-performing digital solutions.",
     "visionTitle": "Driven by Vision",
-    "visionText": "At Codista, we partner with passionate creators, startups, and dreamers to bring digital ideas to life. Be part of the journey.",
+    "visionText": "I work with creative minds, bold brands, and digital enthusiasts to build meaningful projects. Let's bring your digital ambitions to life, together.",
     "scroll": "✺ scroll to explore"
   },
   "NotFound": {
@@ -16,7 +16,7 @@
   "Nav": {
     "About": {
       "title": "About",
-      "description": "About Us"
+      "description": "About Me"
     },
     "Services": {
       "title": "Services",
@@ -24,11 +24,11 @@
     },
     "Projects": {
       "title": "Projects",
-      "description": "Projects We've Worked On"
+      "description": "Projects I've Worked On"
     },
     "Testimonials": {
       "title": "Testimonials",
-      "description": "What Our Clients Say"
+      "description": "What My Clients Say"
     },
     "Contacts": {
       "title": "Contacts",
@@ -36,7 +36,7 @@
     }
   },
   "AboutSection": {
-    "title": "About Us",
+    "title": "About Me",
     "mission": {
       "title": "Mission",
       "description": "To deliver innovative, user-friendly online solutions that empower individuals and businesses, including those without technical expertise, to thrive in the digital landscape."
@@ -71,8 +71,8 @@
         "description": "Developing custom content management systems that empower you to manage your content effortlessly."
       },
       "seo": {
-        "heading": "SEO & Digital Marketing",
-        "description": "Implementing effective SEO strategies and digital marketing campaigns to boost your online visibility."
+        "heading": "SEO",
+        "description": "Implementing effective SEO strategies to boost your online visibility."
       },
       "more": {
         "heading": "More Services",
@@ -87,31 +87,57 @@
     "heading": "Featured Projects",
     "hms": {
       "title": "Hospital Management System",
-      "description": "A fullstack hospital management system, to manage patients data , doctors and appointments. Nexj.js for both front-end and back-end , mongoDB with Prisma ORM and next-auth 5. "
+      "description": "A fullstack hospital management system, to manage patients data , doctors and appointments. Nexj.js for both front-end and back-end , mongoDB with Prisma ORM and next-auth 5. ",
+      "text1": "This application was developed specifically for ophthalmologists and medical teams. Built with Next.js, MongoDB, Prisma ORM, and BetterAuth, it ensures only authorized doctors can access the platform. Access is granted manually by an admin to maintain security and patient confidentiality.",
+      "text2": "Once logged in, doctors can create and manage patient records, add medical history, update information, and assign appointments. Each patient has a dedicated page to track their data easily.",
+      "text3": "As the platform is tailored for ophthalmology, doctors can upload eye images for each patient and write a description for every image. This helps provide detailed visual documentation of patient conditions.",
+      "text4": "Appointments are organized within a dynamic weekly calendar powered by React Big Calendar, offering doctors a clear and interactive view of all scheduled consultations.",
+      "link": "https://ophtachusm-submain.vercel.app/"
     },
     "ecom": {
       "title": "FlowShop - Complete E-com Platform",
-      "description": "A complete e commerce platform using Next js 15, ReactQuery, Tailwindcss, Typescript, and wix API"
+      "description": "A complete e commerce platform using Next js 15, ReactQuery, Tailwindcss, Typescript, and wix API",
+      "text1": "FlowShop is a modern and dynamic e-commerce platform built using the latest technologies, including Next.js 15, Shadcn UI, and ReactQuery. The platform integrates with Wix’s API to handle both the frontend and backend aspects of the store.",
+      "text2": "An intuitive admin dashboard allows for complete inventory management. Products can be added, updated, or removed, and the changes are reflected instantly on the live website without any delays.",
+      "text3": "Customers visiting the site can easily browse products using advanced filtering options. The user experience is smooth and responsive, thanks to optimized queries and real-time updates handled by TanStack ReactQuery.",
+      "text4": "Authentication and account management are handled through the Wix platform, ensuring a secure and scalable system without the need for custom auth implementation.",
+      "link": "https://flowshop-nine.vercel.app/"
     },
     "phone": {
       "title": "CaseCobra - Custom iPhone Cases",
-      "description": "A custom iPhone cases builder E-commerce shop with some fancy features"
+      "description": "A custom iPhone cases builder E-commerce shop with some fancy features",
+      "text1": "CaseCobra is an interactive e-commerce platform that allows users to create their own personalized iPhone cases. It was built using Next.js 14 and uses Kinde for user authentication.",
+      "text2": "The core feature of the platform is the ability to upload or generate custom images and preview them in real time on a realistic iPhone case mockup. This gives users a true-to-life visualization of how their final product will look.",
+      "text3": "The customization engine handles complex rendering to ensure that each design fits perfectly within the frame of the case while maintaining quality and proportions.",
+      "text4": "Once the design is ready, users can proceed to checkout using a secure and smooth payment flow powered by Stripe.",
+      "link": "https://casecobra-phonecase.vercel.app/"
     },
     "pms": {
       "title": "CarePulse - A Healthcare Management System",
-      "description": "A user and admin friendly patient management system that includes patients medical records and much more features. "
+      "description": "A user and admin friendly patient management system that includes patients medical records and much more features. ",
+      "text1": "CarePulse is a modern healthcare appointment system built with Next.js 14. Patients can easily book appointments online by entering basic details like their name, address, phone number, and selecting a doctor, date, and time from the available options.",
+      "text2": "The platform includes a secure admin dashboard protected by an OTP login, where medical staff and doctors can view upcoming appointments and take action — such as approving, canceling, or postponing them based on availability.",
+      "text3": "The system ensures a smooth and professional user experience for both patients and healthcare providers, minimizing friction in communication and scheduling.",
+      "text4": "Once an appointment is confirmed, patients receive an SMS notification with all the relevant details (date, time, doctor) using the Twilio API — enhancing transparency and reducing missed appointments.",
+      "link": "https://carepulse-two-lime.vercel.app/"
     },
     "ai": {
-      "title": "AI Image SaaS - Canva Application",
-      "description": "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack."
+      "title": "MeetAI - an AI Powered Meeting Plateform",
+      "description": "An AI-powered meeting plateform that transcribes, summarizes, and allows meetings in real-time with an AI agent. Built with Next.js 15, tRPC, DrizzleORM, and OpenAI API",
+      "text1": "MeetAI is an innovative platform that merges artificial intelligence with modern web technologies to transform the online meeting experience. It allows users to create their own personalized AI agent and give it specific instructions before starting a meeting.",
+      "text2": "Once the agent is set up, users can launch a real-time meeting through seamless integration with the GetStream API. The meeting takes place as a live voice exchange between the user and the intelligent agent, simulating a real conversation partner.",
+      "text3": "After the meeting ends, a summary is automatically generated using the OpenAI API, along with a full transcript of the interaction. The recording is also saved in a dedicated tab for future access and reference.",
+      "text4": "Additionally, the platform features a chatbot interface that allows users to continue chatting with the AI agent even after the meeting. The project was built with Next.js 15, tRPC, Neon PostgreSQL, DrizzleORM, and ReactQuery — ensuring performance, responsiveness, and robustness.",
+      "link": "https://meetai-omega.vercel.app/"
     },
-    "3d_portfolio": {
-      "title": "Animated 3D Portfolio Website",
-      "description": "An animated portfolio website prototype, combining Framer Motion animations and Three.js 3D effects.."
-    },
-    "imd": {
-      "title": "Inventory Management Dashboard",
-      "descriptio": "A fullstack inventory management dashboard, using next.js for the front-end and node.js for backend along with prisma ORM. Deployed using AWS EC2, S3 and RDS.  "
+    "luxury": {
+      "title": "Côte Royale - Luxury Brand Website",
+      "description": "A luxury-focused website with a strong emphasis on interactivity and visual flow using Next.js 15 and GSAP along with prismic.io",
+      "text1": "Côte Royale is a showcase website developed to reflect the aesthetic and performance expected from a luxury brand. Built with Next.js 15 and styled using Tailwind CSS, the platform delivers a seamless and refined experience.",
+      "text2": "The project makes extensive use of GSAP to create fluid animations that elevate the brand’s elegance, reinforce its identity, and captivate visitors from the first scroll.",
+      "text3": "The visual flow is carefully designed to mirror the premium nature of the brand, combining high-performance rendering with subtle transitions and motion design.",
+      "text4": "Prismic.io is used as a content management system, allowing the client to easily update the content through a user-friendly interface — ensuring flexibility without compromising design.",
+      "link": "https://cote-royale-ecru.vercel.app/"
     }
   },
   "TestimonialsSection": {
@@ -148,6 +174,22 @@
         "loading": "Sending...",
         "default": "Send Message 👋"
       }
+    }
+  },
+  "Footer": {
+    "copyright": "All rights reserved.",
+    "thankYou": "Thank you for visiting our portfolio!",
+    "menu": {
+      "about": "About",
+      "services": "Services",
+      "projects": "Projects",
+      "contacts": "Contacts",
+      "testimonials": "Testimonials"
+    },
+    "socials": {
+      "mail": "GMail",
+      "wtsp": "WhatsApp",
+      "insta": "Instagram"
     }
   }
 }
