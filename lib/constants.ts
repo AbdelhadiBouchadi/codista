@@ -251,60 +251,28 @@ export interface TestimonialCardDetails {
 
 export const testimonialCardDetails: TestimonialCardDetails[] = [
   {
-    name: 'Mejules',
-    position: 'Founder & CEO, Maria Cars',
-    src: 'https://images.pexels.com/photos/30247059/pexels-photo-30247059/free-photo-of-close-up-portrait-of-a-domestic-tabby-cat.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    name: 'Dr. Anass Dalouhamouch',
+    position: 'Ophthalmologist, CHU Souss Massa',
+    src: '/Testimonials/testimonials/chu.png',
     blockquote:
-      'This service transformed my business! The team was incredibly helpful, and the results speak for themselves. Highly recommended!',
+      'Abdelhadi developed a complete Hospital Management System tailored for my ophthalmology practice. His ability to understand complex workflows and transform them into a smooth, intuitive experience was beyond impressive. His support and dedication throughout the process made everything feel effortless. Truly grateful to have had him on board.',
     testimonialVideo: '/Testimonials/video.mp4',
   },
   {
-    name: 'Sarah Thompson',
-    position: 'Marketing Director, TechInnovate',
-    src: 'https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    name: 'Mohammed Bijddiguen',
+    position: 'Manager, Dérive Casablancaise',
+    src: '/Testimonials/testimonials/derive.webp',
     blockquote:
-      'A game-changing solution that exceeded our expectations. Their strategic approach delivered remarkable results and transformed our marketing strategy.',
+      "Working with Abdelhadi on our music festival's website was an incredible journey. He built the platform and the back office from scratch, allowing us to manage everything ourselves with ease. More than a developer, he's been a reliable friend, and I'm genuinely thankful for his talent and commitment.",
     testimonialVideo: '/Testimonials/sarah-video.mp4',
   },
   {
-    name: 'Michael Rodriguez',
-    position: 'Founder & CEO, GreenSpark Solutions',
-    src: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    name: 'Dr. Marouane Bouchadi',
+    position: 'Dentist, Agadir',
+    src: '/Testimonials/testimonials/marouane.jpg',
     blockquote:
-      'Absolutely phenomenal service! Their innovative approach and attention to detail helped us scale our startup more efficiently than we ever imagined.',
+      'My dental portfolio website is exactly how I envisioned it, thanks to Abdelhadi. He was meticulous, fast, and super receptive to every little detail I cared about. I’m proud of what we built together, and amazed by his capability of understanding exactly my needs. I highly recommend him to anyone looking for a talented developer.',
     testimonialVideo: '/Testimonials/michael-video.mp4',
-  },
-  {
-    name: 'Emily Chen',
-    position: 'Chief Operations Officer, DataDrive',
-    src: 'https://images.pexels.com/photos/3775534/pexels-photo-3775534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    blockquote:
-      'Incredibly professional and results-oriented. Their expertise has been instrumental in optimizing our operational processes and driving business growth.',
-    testimonialVideo: '/Testimonials/emily-video.mp4',
-  },
-  {
-    name: 'David Kim',
-    position: 'Head of Product, InnovateTech',
-    src: 'https://images.pexels.com/photos/2380794/pexels-photo-2380794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    blockquote:
-      'A truly transformative partnership. Their insights and strategic guidance have been crucial in reshaping our product development approach.',
-    testimonialVideo: '/Testimonials/david-video.mp4',
-  },
-  {
-    name: 'Rachel Green',
-    position: 'Lead Designer, CreativeSphere',
-    src: 'https://images.pexels.com/photos/3756616/pexels-photo-3756616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    blockquote:
-      "Their creative solutions and deep understanding of our brand have been extraordinary. They've elevated our design strategy to new heights.",
-    testimonialVideo: '/Testimonials/rachel-video.mp4',
-  },
-  {
-    name: 'Alex Nguyen',
-    position: 'CTO, CloudTech Solutions',
-    src: 'https://images.pexels.com/photos/2092474/pexels-photo-2092474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    blockquote:
-      "Cutting-edge technology meets exceptional service. They've been a critical partner in our digital transformation journey.",
-    testimonialVideo: '/Testimonials/alex-video.mp4',
   },
 ];
 

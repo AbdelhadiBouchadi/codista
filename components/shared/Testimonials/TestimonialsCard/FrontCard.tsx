@@ -10,7 +10,7 @@ interface FrontCardProps {
 export default function FrontCard({ data }: FrontCardProps) {
   return (
     <CardSpotlight
-      className="absolute inset-0 h-96 w-full text-alt-white rounded-3xl overflow-hidden p-4 backface-hidden"
+      className="absolute inset-0 h-96 font-medium tracking-wider w-full text-alt-white rounded-3xl overflow-hidden p-4 backface-hidden"
       dir="ltr"
     >
       <Image
@@ -29,7 +29,7 @@ export default function FrontCard({ data }: FrontCardProps) {
         dir="ltr"
       >
         <motion.p
-          className="sm:text-base mobile_m:text-lg h-40"
+          className="text-sm"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           dir="ltr"
