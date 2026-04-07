@@ -32,14 +32,14 @@ export function HeroScroll({
           <ContainerScroll
             titleComponent={
               <>
-                <h1
+                {/* <h1
                   className={cn(
                     'text-4xl font-semibold text-white',
                     isArabic ? 'tajawal-font' : 'houseMontage-font'
                   )}
                 >
                   {title}
-                </h1>
+                </h1> */}
               </>
             }
           >
