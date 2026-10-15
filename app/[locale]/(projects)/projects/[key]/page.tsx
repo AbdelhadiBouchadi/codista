@@ -1,4 +1,5 @@
 'use client';
+
 import Cursor from '@/components/shared/Cursor';
 import { Transition } from '@/components/shared/Transition';
 import { useParams } from 'next/navigation';

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import { useTimeOut } from '@/hooks/use-time-out';
+
 const slideUp = {
   initial: {
     top: 0,
