@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import SmoothScroll from '@/components/shared/SmoothScroll';
+import LegalFooter from '@/components/shared/LegalFooter';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import NotFound from './not-found';
 import { routing } from '@/i18n/routing';
@@ -97,6 +98,7 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <SmoothScroll>{children}</SmoothScroll>
+          <LegalFooter />
         </NextIntlClientProvider>
       </body>
     </html>

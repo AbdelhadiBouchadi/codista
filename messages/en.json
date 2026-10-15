@@ -177,6 +177,7 @@
     }
   },
   "Footer": {
+    "legalNotice": "Legal notice",
     "copyright": "All rights reserved.",
     "thankYou": "Thank you for visiting our portfolio!",
     "menu": {
@@ -191,5 +192,23 @@
       "wtsp": "WhatsApp",
       "insta": "Instagram"
     }
+  },
+  "LegalNotice": {
+    "metaTitle": "Legal notice | Abdelhadev",
+    "metaDescription": "Legal notice for abdelhadev.me: publisher, status, business activity, contact and hosting.",
+    "title": "Legal notice",
+    "publisherTitle": "Site publisher",
+    "legalName": "Legal name",
+    "status": "Status",
+    "activity": "Business activity",
+    "activityValue": "Web development",
+    "city": "City",
+    "email": "Contact email",
+    "phone": "Phone",
+    "director": "Publication director",
+    "hostingTitle": "Hosting",
+    "dataTitle": "Personal data",
+    "dataText": "Information sent through the contact form is used only to reply to your request and is never shared with third parties.",
+    "back": "← Back to the site"
   }
 }

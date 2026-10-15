@@ -1,4 +1,5 @@
 'use client';
+
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -61,7 +62,7 @@ export function ProjectDescription({
           duration: 0.8,
           ease: 'power3.out',
         },
-        '-=0.6'
+        '-=0.6',
       );
 
       // Animate each paragraph (split by words)
@@ -111,7 +112,7 @@ export function ProjectDescription({
         ref={titleRef}
         className={cn(
           'text-3xl md:text-5xl font-bold text-white mb-8 houseMontage-font text-center',
-          isArabic ? 'tajawal-font' : 'milker-font'
+          isArabic ? 'tajawal-font' : 'milker-font',
         )}
       >
         {isArabic && 'وصف المشروع'}

@@ -177,6 +177,7 @@
     }
   },
   "Footer": {
+    "legalNotice": "Mentions légales",
     "copyright": "Tous droits réservés",
     "thankYou": "Merci d'avoir visité notre portfolio!",
     "menu": {
@@ -191,5 +192,23 @@
       "wtsp": "WhatsApp",
       "insta": "Instagram"
     }
+  },
+  "LegalNotice": {
+    "metaTitle": "Mentions légales | Abdelhadev",
+    "metaDescription": "Mentions légales du site abdelhadev.me : éditeur, statut, activité, contact et hébergement.",
+    "title": "Mentions légales",
+    "publisherTitle": "Éditeur du site",
+    "legalName": "Nom légal",
+    "status": "Statut",
+    "activity": "Activité",
+    "activityValue": "Développement web",
+    "city": "Ville",
+    "email": "E-mail de contact",
+    "phone": "Téléphone",
+    "director": "Directeur de la publication",
+    "hostingTitle": "Hébergement",
+    "dataTitle": "Données personnelles",
+    "dataText": "Les informations envoyées via le formulaire de contact sont utilisées uniquement pour répondre à votre demande et ne sont jamais cédées à des tiers.",
+    "back": "← Retour au site"
   }
 }
